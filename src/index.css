@@ -9,9 +9,30 @@
 
 }
 
+#faq-head{
+  background-color: rgb(221, 234, 235);
+  border-radius: 30px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+}
+
+h2{
+  font-weight: lighter;
+}
+
+hr{
+  font-weight:lighter;
+  height: 2px;
+  border-width: 0;
+  color: lightblue;
+  background-color: #ecf0ef;
+}
+
+
 .main{
   text-align: center;
   padding-right: 15%;
+  padding-top: 5%;
 }
 
 /* The sidenav */
@@ -69,33 +90,39 @@
 
 /* The top navigation bar */
 .topnav {
-  background-color: #333;
+  background-color: #ecf0ef;
   overflow: hidden;
   width: 100%;
+  position: fixed;
+  top: 0; /* Add this line to ensure it sticks to the top */
   /* Set the width to 100% */
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: right; 
-  color: #f2f2f2;
+  color: #090909;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  margin-top: 5px;
+
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: rgb(42, 41, 41);
 
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   /* background-color: #04AA6D; */
-  color: white;
+  color: rgb(18, 17, 17);
 }
 
 
@@ -106,6 +133,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 select {
@@ -131,6 +159,8 @@ select {
     position: absolute;
     top: 20px;
     right: 20px;
+    
+   
   }
 
   .image-container {
@@ -281,5 +311,25 @@ form .form-input {
   margin-left: 200px; /* Same as the width of the sidenav */
 }
 
+.BsTitle {
+  /* background-color: #cce3de; */
+    border-radius: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+  }
 
+.Bstext{
+  border-radius: 30px;
+  /* background-color: #cce3de; */
+  padding-top: 1%;
+  padding-bottom:1%; 
 
+}
+
+.number {
+-ms-text-size-adjust: 200%;
+}
+
+.bsp{
+  padding-bottom: 45%;
+}
