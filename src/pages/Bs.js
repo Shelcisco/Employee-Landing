@@ -7,7 +7,13 @@ import BsPic5 from './BsPic5.png';
 
 export default function Bs() {
   return (
+
 <div className="best">
+
+
+<button className="FavButt">Add to Favorites</button>
+
+
 <div className= "BsTitle"><h1>How to Be a Successful Salesperson</h1></div>    
 <br></br>
 <div className="bs1">
