@@ -42,6 +42,21 @@ export default function Navbar({ page, setPage }) {
     }
   };
 
+  const handleLinkClick = (option) => {
+    if (option === "Bs") {
+      // Do something related to the Bs option
+      // For example:
+      toggleSidebar("Bs");
+    } else if (option === "Faq") {
+      // Do something related to the Faq option
+      // For example:
+      toggleSidebar("faq");
+    }
+    // Add more conditions as needed
+  };
+
+  
+
   return (
     <div className="">
       <div className="topnav">
@@ -122,9 +137,10 @@ export default function Navbar({ page, setPage }) {
         )}
       </div>
       <div className="main">
-        {showFaq ? <Faq /> : null} {/* Conditionally render the FAQ component */}
-        {showBs ? <Bs /> : null} {/* Conditionally render the Bs component */}
-        {showFav ? <Fav /> : null} {/* Conditionally render the Fav component */}
+        {/* Conditional rendering based on showFaq, showBs, showFav */}
+        {showFaq ? <Faq /> : null}
+        {showBs ? <Bs /> : null}
+        {showFav ? <Fav handleLinkClick={handleLinkClick} /> : null}
       </div>
     </div>
   );
