@@ -1,18 +1,30 @@
+
 import React from "react";
 import BsPic1 from './BsPic1.png';
+import FAQpic from './FAQpic.png';
+import { Link } from "react-router-dom";
 
-export default function Fav() {
+export default function Fav({ handleLinkClick }) {
   return (
     <div className="fav">
       <div className="plac">
-        <p>"Hello World"</p>
       </div>
+     
       <div className="card">
-        <img src={BsPic1} width={200} height={200} alt="BsFav" />
+        <Link to="/WA#Bs" onClick={() => handleLinkClick("Bs")}>
+          <img src={BsPic1} width={250} height={200} alt="BsFav" />
+        </Link>
         <div className="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-          {/* Container for the button with specified width */}
+        <Link to="/WA#Bs" onClick={() => handleLinkClick("Bs")}><h4>Succesful Salesperson SOP</h4></Link>
+        </div>
+      </div>
+
+      <div className="card">
+        <Link to="/WA#Faq" onClick={() => handleLinkClick("Faq")}>
+          <img src={FAQpic} width={250} height={200} alt="BsFav" />
+        </Link>
+        <div className="container">
+        <Link to="/WA#Faq" onClick={() => handleLinkClick("Faq")}><h4>Frequently Asked Questions</h4></Link>
         </div>
       </div>
     </div>
