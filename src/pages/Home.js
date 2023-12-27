@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import WALogo from './WAnew.png';
-import HILogo from './HInew.png';
-import AKLogo from './AKnew.png';
+import WALogo from '../assets/WAnew.png';
+import HILogo from '../assets/HInew.png';
+import AKLogo from '../assets/AKnew.png';
 import { Link } from "react-router-dom"; // Import the Link component
 
 

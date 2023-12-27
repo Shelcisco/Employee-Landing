@@ -1,9 +1,9 @@
 import React from "react";
-import BsPic1 from './BsPic1.png';
-import BsPic2 from './BsPic2.png';
-import BsPic3 from './BsPic3.png';
-import BsPic4 from './BsPic4.png';
-import BsPic5 from './BsPic5.png';
+import BsPic1 from '../assets/BsPic1.png';
+import BsPic2 from '../assets/BsPic2.png';
+import BsPic3 from '../assets/BsPic3.png';
+import BsPic4 from '../assets/BsPic4.png';
+import BsPic5 from '../assets/BsPic5.png';
 
 export default function Bs() {
   return (

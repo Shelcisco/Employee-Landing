@@ -1,7 +1,7 @@
 
 import React from "react";
-import BsPic1 from './BsPic1.png';
-import FAQpic from './FAQpic.png';
+import BsPic1 from '../assets/BsPic1.png';
+import FAQpic from '../assets/FAQpic.png';
 import { Link } from "react-router-dom";
 
 export default function Fav({ handleLinkClick }) {
