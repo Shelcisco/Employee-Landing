@@ -42,11 +42,29 @@ export default function Navbar({ page, setPage }) {
     }
   };
 
+  const handleLinkClick = (option) => {
+    if (option === "Bs") {
+      // Do something related to the Bs option
+      // For example:
+      toggleSidebar("Bs");
+    } else if (option === "Faq") {
+      // Do something related to the Faq option
+      // For example:
+      toggleSidebar("faq");
+    }
+    // Add more conditions as needed
+  };
+
+  
+
   return (
     <div className="">
       <div className="topnav">
         <Link to="/home" className={page === "home" ? "active" : ""}>
           Home
+        </Link>
+        <Link to="/WA" className={page === "wa" ? "active" : ""}>
+          WA Home
         </Link>
         <a
           href="#delivery"
@@ -76,13 +94,9 @@ export default function Navbar({ page, setPage }) {
         >
           Sales
         </a>
- <a 
-          href="#fav"
-          onClick={() => toggleSidebar("Fav")}
-          className={activeOption === "Fav" ? "active" : ""}
-        >
+        <Link to="/Fav" className={page === "fav" ? "active" : ""}>
           Favorites
-        </a>
+        </Link>
       </div>
 
 
@@ -92,22 +106,14 @@ export default function Navbar({ page, setPage }) {
             <a href="javascript:void(0)" className="closebtn" onClick={() => toggleSidebar("sales")}>
               &times; Close
             </a>
-            <a
-              href="#faq" // Change the href to "faq"
-              onClick={() => toggleSidebar("faq")}
-              className={activeOption === "faq" ? "active" : ""} // Add an active class for FAQ
-            >
-              Frequently Asked
-            </a> {/* "Frequently Asked" link in the sidebar */}
-            <a
-              href="#Bs" // Change the href to "faq"
-              onClick={() => toggleSidebar("Bs")}
-              className={activeOption === "Bs" ? "active" : ""} // Add an active class for FAQ
-            >
-              Succesful Sales SOP
-            </a>
-            <a href="#">Sales Option 2</a>
-            {/* Add more Sales options here */}
+          
+            <Link to="/Faq" className={page === "faq" ? "active" : ""}>
+          Frequently Asked
+        </Link>
+        <Link to="/Bs" className={page === "bs" ? "active" : ""}>
+        Succesful Sales SOP
+        </Link>
+       
           </div>
         )}
         {activeOption === "cs" && (
@@ -121,7 +127,7 @@ export default function Navbar({ page, setPage }) {
           </div>
         )}
       </div>
-     
+   
     </div>
   );
 }
