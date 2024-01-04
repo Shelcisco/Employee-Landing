@@ -1,8 +1,19 @@
 import React from "react";
+import Navbar from "./Nav";
+import { useFavorites } from "./FavoritesContext";
 
 export default function Faq() {
+  const { addToFavorites } = useFavorites();
+
   return (
     <div className="faq-page">
+      <Navbar/>
+
+      <button className="FavButt" alt="Faq-Butt" onClick={() => addToFavorites("Faq")}>
+        Add to Favorites
+      </button>
+      <br></br>
+
         <div id="faq-head">
       <h1>Frequently Asked Questions</h1>
       </div>
