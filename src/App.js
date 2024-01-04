@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FavoritesProvider } from './pages/FavoritesContext';
 import Home from './pages/Home';
 import WA from './pages/WA';
 import Bs from './pages/Bs';
@@ -10,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <FavoritesProvider>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route index element={<Home />} />
@@ -21,7 +22,8 @@ function App() {
           <Route path="/Faq" element = {<Faq />} />
         </Routes>
       </BrowserRouter>
-    </div>
+      </FavoritesProvider>
+   
   );
 }
 
