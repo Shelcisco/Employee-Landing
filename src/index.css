@@ -1,14 +1,5 @@
 
 
-:root{
-  --g1:#F6FFF8;
-  --g2:#EAF4F4;
-  --g3:#cce3de;
-  --g4:#A4C3B2;
-  --g5:#344640;
-
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -59,6 +50,13 @@ hr{
   
   padding-top: 5%;
 }
+
+.Banner {
+  text-align: center;
+  padding-top: 8%;
+  
+}
+
 
 /* The sidenav */
 .sidenav {
@@ -113,29 +111,46 @@ hr{
   .sidenav a {font-size: 18px;}
 }
 
-/* The top navigation bar */
 .topnav {
   background-color: #ecf0ef;
   overflow: hidden;
   width: 100%;
   position: fixed;
-  top: 0; /* Add this line to ensure it sticks to the top */
-  /* Set the width to 100% */
+  top: 0;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the items horizontally */
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: right; 
   color: #090909;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  /* font-family: 'Courier New', monospace;
-  font-weight: lighter; */
+  margin-top: 5px;
+  flex-grow: 1; /* Allow links to equally share available space */
+}
+
+/* The top navigation bar LEFT */
+/* .topnav {
+  background-color: #ecf0ef;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0; 
+} */
+
+/* Style the links inside the navigation bar LEFT */
+/* .topnav a {
+  float: left; 
+  color: #090909;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
   margin-top: 5px;
 
-}
+} */
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -359,4 +374,78 @@ form .form-input {
 
 .bsp{
   padding-bottom: 45%;
+}
+
+/* ANNOUNCEMENTS SLIDESHOW CSS WA.JS*/
+
+/* Add your existing CSS */
+
+.Announce {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slideshow-container {
+  max-width: 500px; /* Adjust width as needed */
+  margin: 0 auto;
+  border: 1px solid #ccc; /* Border style */
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow: hidden;
+  position: relative;
+}
+
+.announcement {
+  text-align: center;
+  width: 100%;
+}
+
+.announcement p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.announcement img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow.left {
+  left: 5px;
+}
+
+.arrow.right {
+  right: 5px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
