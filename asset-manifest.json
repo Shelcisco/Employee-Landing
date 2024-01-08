@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/Employee-Landing/static/css/main.60617260.css",
-    "main.js": "/Employee-Landing/static/js/main.ebfbbc95.js",
+    "main.css": "/Employee-Landing/static/css/main.27ef1013.css",
+    "main.js": "/Employee-Landing/static/js/main.fed2efc7.js",
     "static/js/787.e4dc4b5c.chunk.js": "/Employee-Landing/static/js/787.e4dc4b5c.chunk.js",
+    "static/media/Banner.png": "/Employee-Landing/static/media/Banner.2bc7b6054d30bbe7b9b2.png",
     "static/media/BsPic4.png": "/Employee-Landing/static/media/BsPic4.a0eb9996fd094be94db2.png",
     "static/media/BsPic2.png": "/Employee-Landing/static/media/BsPic2.8699de3ab35e2d162a17.png",
     "static/media/BsPic3.png": "/Employee-Landing/static/media/BsPic3.c503de0b8b1e275a48fe.png",
     "static/media/BsPic5.png": "/Employee-Landing/static/media/BsPic5.9c555cca9535d5552d19.png",
     "static/media/BsPic1.png": "/Employee-Landing/static/media/BsPic1.0bdd954c86e8d7c99dd4.png",
+    "static/media/event.png": "/Employee-Landing/static/media/event.d08506adda502a479ccc.png",
+    "static/media/Team.png": "/Employee-Landing/static/media/Team.c03f23968b98387221c0.png",
+    "static/media/newSystem.png": "/Employee-Landing/static/media/newSystem.06665ba8802d54ce4f05.png",
+    "static/media/CCLogo2.png": "/Employee-Landing/static/media/CCLogo2.955a3c30c026f2f21075.png",
     "static/media/AKnew.png": "/Employee-Landing/static/media/AKnew.228eb17a18b7962940f4.png",
     "static/media/WAnew.png": "/Employee-Landing/static/media/WAnew.d441a0232d49d220c2ec.png",
     "static/media/HInew.png": "/Employee-Landing/static/media/HInew.b3cb073ef23f6383f8d9.png",
     "index.html": "/Employee-Landing/index.html",
-    "main.60617260.css.map": "/Employee-Landing/static/css/main.60617260.css.map",
-    "main.ebfbbc95.js.map": "/Employee-Landing/static/js/main.ebfbbc95.js.map",
+    "main.27ef1013.css.map": "/Employee-Landing/static/css/main.27ef1013.css.map",
+    "main.fed2efc7.js.map": "/Employee-Landing/static/js/main.fed2efc7.js.map",
     "787.e4dc4b5c.chunk.js.map": "/Employee-Landing/static/js/787.e4dc4b5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60617260.css",
-    "static/js/main.ebfbbc95.js"
+    "static/css/main.27ef1013.css",
+    "static/js/main.fed2efc7.js"
   ]
 }
