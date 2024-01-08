@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/CCLogo2.png";
+import Team from "../assets/Team.png";
 import Faq from "./Faq"; // Import the Faq component
 import Bs from "./Bs"; // Import the Best Sales component
 import Fav from "./Favorite"; 
+import Banner from "../assets/Banner.png";
+import Event from "../assets/event.png";
+import NewSystem from "../assets/newSystem.png";
 
 export default function Navbar({ page, setPage }) {
   // State to keep track of the currently open sidebar option
@@ -54,6 +59,38 @@ export default function Navbar({ page, setPage }) {
     }
     // Add more conditions as needed
   };
+
+  const announcements = [
+    {
+      text: "Cool Event!",
+      image: Event,
+    },
+    {
+      text: "New System Tool Coming Soon",
+      image: NewSystem,
+    },
+    // Add more objects as needed
+  ];
+
+  const [currentAnnouncementIndex, setCurrentAnnouncementIndex] = useState(0);
+
+  const goToNextAnnouncement = () => {
+    setCurrentAnnouncementIndex((prevIndex) =>
+      prevIndex === announcements.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const goToPrevAnnouncement = () => {
+    setCurrentAnnouncementIndex((prevIndex) =>
+      prevIndex === 0 ? announcements.length - 1 : prevIndex - 1
+    );
+  };
+
+  useEffect(() => {
+    const interval = setInterval(goToNextAnnouncement, 3000); // Change slide every 3 seconds (adjust as needed)
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
 
   
 
@@ -124,6 +161,45 @@ export default function Navbar({ page, setPage }) {
           </div>
         )}
       </div>
+
+      <div className="WaWelcome">
+        <div className="Banner">
+      
+        <img src={Banner} alt="ban" width={900} height={500} ></img>
+        
+        </div>
+<div className="Announce">
+<p>Announcements</p>
+<div className="slideshow-container">
+        <div className="slideshow-box">
+          <div className="slideshow">
+            <div className="announcement">
+              <p>{announcements[currentAnnouncementIndex].text}</p>
+              <img
+                src={announcements[currentAnnouncementIndex].image}
+                alt="announcement_image"
+              />
+            </div>
+          </div>
+          <button className="arrow left" onClick={goToPrevAnnouncement}>
+            &#10094;
+          </button>
+          <button className="arrow right" onClick={goToNextAnnouncement}>
+            &#10095;
+          </button>
+        </div>
+      
+
+</div>
+
+      </div>
+
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    
     </div>
   );
